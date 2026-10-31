@@ -1,0 +1,8 @@
+{
+  "name": "OG AI",
+  "description": "OG AI is the next-generation autonomous AI suite featuring a smooth 3D logo launch animation, Firebase Email + Password + Email OTP verification, AI Fusion Studio, and a persistent creative studio for Chat, 8K Images, Veo Videos, and Photo & Video Editing with ₹385 starter credits.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

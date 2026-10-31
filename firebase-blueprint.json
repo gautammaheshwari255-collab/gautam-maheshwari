@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile document containing authentication identity, Star credits balance, and vault data",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "name": { "type": "string" },
+        "stars": { "type": "number" },
+        "credits": { "type": "number" },
+        "starterCreditsClaimed": { "type": "boolean" },
+        "settings": { "type": "object" },
+        "history": { "type": "array" },
+        "messages": { "type": "array" },
+        "images": { "type": "array" },
+        "videos": { "type": "array" },
+        "cloudSyncEnabled": { "type": "boolean" },
+        "lastSyncedAt": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "lastLoginAt": { "type": "string" }
+      },
+      "required": ["email", "name"]
+    },
+    "EmailOtp": {
+      "title": "EmailOtp",
+      "description": "Email verification OTP record with expiration and attempts validation",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "code": { "type": "string" },
+        "type": { "type": "string", "enum": ["signup", "login", "reset"] },
+        "attempts": { "type": "number" },
+        "verified": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "expiresAt": { "type": "number" }
+      },
+      "required": ["email", "code", "expiresAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile with persistent account data and verified authentication"
+    },
+    "/email_otps/{email}": {
+      "schema": "EmailOtp",
+      "description": "Transient 6-digit OTP verification codes for email verification"
+    }
+  }
+}

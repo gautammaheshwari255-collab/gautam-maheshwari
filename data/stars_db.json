@@ -1,0 +1,135 @@
+{
+  "users": {
+    "gautammaheshwari225@gmail.com": {
+      "email": "gautammaheshwari225@gmail.com",
+      "name": "Alex Vance",
+      "stars": 400,
+      "totalEarned": 400,
+      "totalSpent": 0,
+      "isAdmin": true,
+      "createdAt": "2026-09-23T08:27:28.466Z",
+      "updatedAt": "2026-09-23T08:27:28.466Z"
+    },
+    "demo@ogoo.ai": {
+      "email": "demo@ogoo.ai",
+      "name": "Demo Pioneer",
+      "stars": 400,
+      "totalEarned": 400,
+      "totalSpent": 0,
+      "isAdmin": true,
+      "createdAt": "2026-09-23T08:27:28.466Z",
+      "updatedAt": "2026-09-23T08:27:28.466Z"
+    },
+    "gautam@gmail.com": {
+      "email": "gautam@gmail.com",
+      "name": "gautam",
+      "stars": 400,
+      "totalEarned": 400,
+      "totalSpent": 0,
+      "isAdmin": false,
+      "createdAt": "2026-09-23T08:27:28.467Z",
+      "updatedAt": "2026-09-23T08:27:28.467Z"
+    },
+    "freshuser@ogoo.ai": {
+      "email": "freshuser@ogoo.ai",
+      "name": "Fresh User",
+      "stars": 1870,
+      "starterCreditsClaimed": true,
+      "starterCreditsClaimedAt": "2026-09-23T08:40:57.919Z",
+      "totalEarned": 1885,
+      "totalSpent": 15,
+      "isAdmin": false,
+      "orders": [
+        {
+          "orderId": "ORD-1790152868935-121HQ",
+          "planId": "plan_1000",
+          "amount": 1000,
+          "creditsAdded": 1500,
+          "paymentMethod": "UPI",
+          "timestamp": "2026-09-23T08:41:08.935Z",
+          "status": "completed"
+        }
+      ],
+      "createdAt": "2026-09-23T08:40:57.919Z",
+      "updatedAt": "2026-09-23T08:41:08.935Z"
+    }
+  },
+  "pricing": {
+    "image_standard": 10,
+    "image_8k": 15,
+    "video_standard": 25,
+    "video_4k": 40,
+    "photo_inpaint": 8,
+    "photo_upscale": 12,
+    "chat_message": 2,
+    "audio_voice": 5,
+    "music_gen": 15,
+    "image": 15,
+    "video": 40,
+    "chat": 2,
+    "photoEditor": 10,
+    "tools": 10
+  },
+  "transactions": [
+    {
+      "id": "tx-ord-ORD-1790152868935-121HQ",
+      "userEmail": "freshuser@ogoo.ai",
+      "type": "credit",
+      "amount": 1500,
+      "balanceAfter": 1870,
+      "reason": "Purchased ₹1,000 Creator Pro (1,500 Credits) via UPI",
+      "toolId": "topup",
+      "timestamp": "2026-09-23T08:41:08.936Z"
+    },
+    {
+      "id": "tx-edit-1790152864338-ip4o1y",
+      "userEmail": "freshuser@ogoo.ai",
+      "type": "debit",
+      "amount": -15,
+      "balanceAfter": 370,
+      "reason": "4K Video Export (₹15)",
+      "toolId": "editor",
+      "timestamp": "2026-09-23T08:41:04.338Z"
+    },
+    {
+      "id": "tx-1790152857920-5iwong",
+      "userEmail": "freshuser@ogoo.ai",
+      "type": "credit",
+      "amount": 385,
+      "balanceAfter": 385,
+      "reason": "OGOO Starter Grant (₹385 Starter Credits - One-time Pioneer Grant)",
+      "toolId": "bonus",
+      "timestamp": "2026-09-23T08:40:57.919Z"
+    },
+    {
+      "id": "tx-1790152048467-v95fnb",
+      "userEmail": "gautam@gmail.com",
+      "type": "credit",
+      "amount": 400,
+      "balanceAfter": 400,
+      "reason": "OGOO New Pioneer Welcome Grant",
+      "toolId": "bonus",
+      "timestamp": "2026-09-23T08:27:28.467Z"
+    },
+    {
+      "id": "tx-seed-1",
+      "userEmail": "gautammaheshwari225@gmail.com",
+      "type": "credit",
+      "amount": 400,
+      "balanceAfter": 400,
+      "reason": "OGOO New Pioneer Welcome Grant",
+      "toolId": "bonus",
+      "timestamp": "2026-09-23T08:27:28.466Z"
+    },
+    {
+      "id": "tx-seed-2",
+      "userEmail": "demo@ogoo.ai",
+      "type": "credit",
+      "amount": 400,
+      "balanceAfter": 400,
+      "reason": "OGOO New Pioneer Welcome Grant",
+      "toolId": "bonus",
+      "timestamp": "2026-09-23T08:27:28.466Z"
+    }
+  ]
+}
